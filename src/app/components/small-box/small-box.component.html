@@ -1,0 +1,13 @@
+<div [class]="'small-box ' + colorBox">
+  <div class="inner">
+    <h3>{{cantidad}}<sup style="font-size: 20px">{{simbolo}}</sup></h3>
+
+    <p>{{textoPrincipal}}</p>
+  </div>
+  <div *ngIf="claseIcono" class="icon">
+    <i [class]="claseIcono"></i>
+  </div>
+  <a [routerLink]="routerLink" class="small-box-footer">
+    {{textoPie}} <i class="fa fa-arrow-circle-right"></i>
+  </a>
+</div>

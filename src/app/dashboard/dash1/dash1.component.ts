@@ -24,8 +24,9 @@ export class Dash1Component implements OnInit {
   calendar: JQuery;
 
   constructor() { }
+
   ngOnInit() {
-     // Update the AdminLTE layouts
+    // Update the AdminLTE layouts
     AdminLTE.init();
     // Make the dashboard widgets sortable Using jquery UI
     jQuery('.connectedSortable').sortable({
@@ -47,7 +48,7 @@ export class Dash1Component implements OnInit {
 
     // bootstrap WYSIHTML5 - text editor
     // jQuery('.textarea').wysihtml5();
-
+/*
     jQuery('.daterange').daterangepicker({
       ranges: {
         'Today': [moment(), moment()],
@@ -62,7 +63,7 @@ export class Dash1Component implements OnInit {
     }, function (start, end) {
       // window.alert('You chose:  ' + this.start.format('MMMM D, YYYY') + ' - ' + this.end.format('MMMM D, YYYY'));
     });
-
+*/
 
     this.knob = jQuery('.knob').knob();
     this.calendar = jQuery('#calendar').datepicker();
