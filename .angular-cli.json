@@ -45,6 +45,8 @@
         "../node_modules/bootstrap3-wysihtml5-bower/dist/bootstrap3-wysihtml5.all.js",
         "../node_modules/icheck/icheck.js",
         "../node_modules/admin-lte/dist/js/app.js",
+        "../node_modules/chart.js/dist/Chart.bundle.min.js",
+        "../node_modules/chart.js/dist/Chart.min.js",
         "assets/js/scripts.js"
       ],
       "environmentSource": "environments/environment.ts",

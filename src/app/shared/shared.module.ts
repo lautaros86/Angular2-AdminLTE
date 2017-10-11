@@ -1,3 +1,4 @@
+import { BoxComponent } from './../components/box/box.component';
 import { RouterModule } from '@angular/router';
 import { SmallBoxComponent } from './../components/small-box/small-box.component';
 import { NgModule } from '@angular/core';
@@ -9,10 +10,12 @@ import { CommonModule } from '@angular/common';
     RouterModule
   ],
   declarations: [
-    SmallBoxComponent
+    SmallBoxComponent,
+    BoxComponent
   ],
   exports: [
-    SmallBoxComponent
+    SmallBoxComponent,
+    BoxComponent
   ]
 })
 export class SharedModule { }
