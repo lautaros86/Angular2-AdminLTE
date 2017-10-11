@@ -1,0 +1,16 @@
+<div class="chart">
+    <div class="chart-responsive">
+      <canvas id="doughnutChart" 
+      baseChart 
+      [data]="data"
+      [labels]="labels"
+      [datasets]="datasets"
+      [chartType]="chartType" 
+      [colors]="colors"
+      [options]="optionsData"
+      [legend]="legend"
+      (chartHover)="chartHovered($event)"
+      (chartClick)="chartClicked($event)"></canvas>
+    </div>
+    <!-- ./chart-responsive -->
+</div>

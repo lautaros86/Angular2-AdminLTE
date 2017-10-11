@@ -15,90 +15,79 @@
 <section class="content">
   <div class="row">
     <div class="col-md-6">
-      <!-- AREA CHART -->
-      <app-box [boxType]="'box-primary'" [withBorder]="false">
-        <p boxTitle>Titulo Para box por transclusion</p>
-        <div boxBody class="chart">
-          <canvas id="areaChart" style="height:250px"></canvas>
-        </div>
-      </app-box>
-
-      <app-area></app-area>
-      <!-- /.box-body -->
-      <!-- /.box -->
 
       <!-- DONUT CHART -->
       <app-box
       [boxType]="'box-danger'"
       [closeButton]="false">
         <p boxTitle>Doughnut Chart</p>
-        <app-pie-chart boxBody></app-pie-chart>
+        <app-chartjs-base
+        [labels]="labels"
+        [data]="data"
+        [colors]="colors"
+        boxBody></app-chartjs-base>
       </app-box>
+      <!-- /.box -->
 
-      <div class="box box-danger">
-        <div class="box-header with-border">
-          <h3 class="box-title">Donut Chart</h3>
-
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-              </button>
-            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-          </div>
-        </div>
-        <div class="box-body">
-          <canvas id="pieChart" style="height:250px"></canvas>
-        </div>
-        <!-- /.box-body -->
-      </div>
+      <!-- POLAR CHART -->
+      <app-box
+      [boxType]="'box-primary'"
+      [closeButton]="false">
+        <p boxTitle>Polar Chart</p>
+        <app-chartjs-base 
+        [data]="data"
+        [chartType]="'polarArea'"
+        boxBody></app-chartjs-base>
+      </app-box>
       <!-- /.box -->
 
     </div>
     <!-- /.col (LEFT) -->
     <div class="col-md-6">
       <!-- LINE CHART -->
-      <div class="box box-info">
-        <div class="box-header with-border">
-          <h3 class="box-title">Line Chart</h3>
-
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-              </button>
-            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-          </div>
-        </div>
-        <div class="box-body">
-          <div class="chart">
-            <canvas id="lineChart" style="height:250px"></canvas>
-          </div>
-        </div>
-        <!-- /.box-body -->
-      </div>
+      <app-box
+      [boxType]="'box-primary'"
+      [closeButton]="false">
+        <p boxTitle>Line Chart</p>
+        <app-chartjs-base
+        [chartType]="'line'"
+        [datasets]="dataSet"
+        [colors]="lineChartColors"
+        [labels]="['January', 'February', 'March', 'April', 'May', 'June', 'July']"
+        boxBody></app-chartjs-base>
+      </app-box>
+      
       <!-- /.box -->
 
       <!-- BAR CHART -->
-      <div class="box box-success">
-        <div class="box-header with-border">
-          <h3 class="box-title">Bar Chart</h3>
+      <app-box
+      [boxType]="'box-success'"
+      [closeButton]="false">
+        <p boxTitle>Bar Chart</p>
+        <app-chartjs-base 
+        [chartType]="'bar'"
+        [datasets]="dataSet"
+        [labels]="labels"
+        boxBody></app-chartjs-base>
+      </app-box>
+      <!-- /.box -->
 
-          <div class="box-tools pull-right">
-            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-              </button>
-            <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-          </div>
-        </div>
-        <div class="box-body">
-          <div class="chart">
-            <canvas id="barChart" style="height:230px"></canvas>
-          </div>
-        </div>
-        <!-- /.box-body -->
-      </div>
+      <!-- BAR CHART -->
+      <app-box
+      [boxType]="'box-success'"
+      [closeButton]="false">
+        <p boxTitle>Radar Chart</p>
+        <app-chartjs-base 
+        [chartType]="'radar'"
+        [datasets]="dataSet"
+        [labels]="labelRadar"
+        boxBody></app-chartjs-base>
+      </app-box>
       <!-- /.box -->
 
     </div>
     <!-- /.col (RIGHT) -->
   </div>
   <!-- /.row -->
-
 </section>
 <!-- /.content -->
