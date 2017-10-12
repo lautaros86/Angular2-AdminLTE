@@ -10,6 +10,7 @@ import { ShellComponent } from './core/shell/shell.component';
     CoreModule
   ],
   providers: [],
-  bootstrap: [ShellComponent]
+  bootstrap: [ShellComponent],
+  declarations: []
 })
 export class AppModule { }

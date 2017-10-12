@@ -7,8 +7,8 @@ import { Dash1Component } from './../dash1/dash1.component';
 import { Dash2Component } from './../dash2/dash2.component';
 
 const routes: Routes = [
-  { path: '', component: Dash1Component },
-  { path: 'dashboard2', component: Dash2Component }
+  { path: '1', component: Dash1Component },
+  { path: '2', component: Dash2Component }
 ];
 
 @NgModule({

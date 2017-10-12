@@ -1,16 +1,20 @@
 <div [class]="'box ' + boxType">
     <div [class]="'box-header ' + underline()">
+      <i *ngIf="iconTitle" [class]="iconTitle"></i>
       <h3 class="box-title">
-        <ng-content select="[boxTitle]"></ng-content>
+          <ng-content select="[boxTitle]"></ng-content>
       </h3>
   
       <div class="box-tools pull-right">
-        <button *ngIf="minusButton" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
+        <button *ngIf="minusButton" class="btn btn-box-tool" data-widget="collapse"><i [style.color]="windowButtonsColor" class="fa fa-minus"></i>
         </button>
-        <button *ngIf="closeButton" type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+        <button *ngIf="closeButton" type="button" class="btn btn-box-tool" data-widget="remove"><i [style.color]="windowButtonsColor" class="fa fa-times"></i></button>
       </div>
     </div>
     <div class="box-body">
       <ng-content select="[boxBody]"></ng-content>        
     </div>
+
+    <ng-content select="[boxFooter]"></ng-content>        
+    
   </div>
