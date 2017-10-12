@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardRoutesModule } from './dashboard-routes/dashboard-routes.module';
 import { Dash1Component } from './dash1/dash1.component';
+import { Dash2Component } from './dash2/dash2.component';
 
 @NgModule({
   imports: [
@@ -12,7 +13,8 @@ import { Dash1Component } from './dash1/dash1.component';
     DashboardRoutesModule
   ],
   declarations: [
-    Dash1Component
+    Dash1Component,
+    Dash2Component
   ]
 })
 export class DashboardModule { }
