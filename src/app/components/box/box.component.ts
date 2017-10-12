@@ -32,6 +32,12 @@ export class BoxComponent implements OnInit {
   @Input()
   closeButton = true;
 
+  @Input()
+  windowButtonsColor: string = '#97a0b3';
+
+  @Input()
+  iconTitle: string;
+  
   constructor() { }
 
   ngOnInit() {
