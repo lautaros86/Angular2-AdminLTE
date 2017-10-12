@@ -5,9 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { ChartsModule } from 'ng2-charts';
 
-import { AreaComponent } from './area/area.component';
 import { ChartjsComponent } from './chartjs/chartjs.component';
-import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { ChartjsBaseComponent } from './chartjs-base/chartjs-base.component';
 
 const routes: Routes = [
@@ -23,8 +21,6 @@ const routes: Routes = [
   ],
   declarations: [
     ChartjsComponent,
-    AreaComponent,
-    PieChartComponent,
     ChartjsBaseComponent
     ]
 })
