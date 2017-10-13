@@ -37,7 +37,9 @@ export class BoxComponent implements OnInit {
 
   @Input()
   iconTitle: string;
-  
+
+  @Input()
+  classButton: string = 'btn btn-box-tool';
   constructor() { }
 
   ngOnInit() {
