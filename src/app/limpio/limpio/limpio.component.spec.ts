@@ -1,25 +1,25 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { StarterComponent } from './starter.component';
+import { LimpioComponent } from './limpio.component';
 
-describe('StarterComponent', () => {
-  let component: StarterComponent;
-  let fixture: ComponentFixture<StarterComponent>;
+describe('LimpioComponent', () => {
+  let component: LimpioComponent;
+  let fixture: ComponentFixture<LimpioComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ StarterComponent ]
+      declarations: [ LimpioComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(StarterComponent);
+    fixture = TestBed.createComponent(LimpioComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should be created', () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });
